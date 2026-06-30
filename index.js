@@ -8,8 +8,8 @@ const kick = new Audio("./sounds/kick-bass.mp3");
 const snare = new Audio("./sounds/snare.mp3");
 
 
-function playSound(e){
-  switch (e) {
+function playSound(key){
+  switch (key) {
       case "w":
         tom1.play();
         break;
@@ -33,7 +33,7 @@ function playSound(e){
         break;
 
       default:
-        console.log(e.target);
+        console.log(key.target);
         break;
     }
 }
@@ -47,8 +47,6 @@ btns.forEach((btn) => {
 
 document.addEventListener('keypress',function(event){
   playSound(event.key)
-
-
   console.log(event.key)
 
 })
