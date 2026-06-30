@@ -2,6 +2,8 @@
 
 A simple browser-based drum kit built with vanilla HTML, CSS, and JavaScript. Play drum sounds either by clicking the on-screen buttons or by pressing the corresponding keys on your keyboard.
 
+🔗 **Live Demo:** [https://drumkit-javascript.vercel.app/](https://drumkit-javascript.vercel.app/)
+
 ## Features
 
 - 7 drum pads: tom1, tom2, tom3, tom4, snare, crash, and kick
