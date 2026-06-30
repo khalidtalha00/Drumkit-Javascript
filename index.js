@@ -38,15 +38,27 @@ function playSound(key){
     }
 }
 
+function addAnimation(currentKey){
+  let activeButton=document.querySelector("."+currentKey)
+  activeButton.classList.add("pressed")
+  setTimeout(() => {
+    activeButton.classList.remove("pressed")
+    
+  }, 200);
+
+}
+
 btns.forEach((btn) => {
   btn.addEventListener("click", (e) => {
     playSound(e.target.innerHTML)
+    addAnimation(e.target.innerHTML)
   });
 });
 
 
 document.addEventListener('keypress',function(event){
   playSound(event.key)
+  addAnimation(event.key)
   console.log(event.key)
 
 })
